@@ -1,0 +1,11 @@
+D:\PROGRAMIRANJE\FormaOcena\FormaOcena\FormaOcena\bin\Debug\FormaOcena.exe.config
+D:\PROGRAMIRANJE\FormaOcena\FormaOcena\FormaOcena\bin\Debug\FormaOcena.exe
+D:\PROGRAMIRANJE\FormaOcena\FormaOcena\FormaOcena\bin\Debug\FormaOcena.pdb
+D:\PROGRAMIRANJE\FormaOcena\FormaOcena\FormaOcena\obj\Debug\FormaOcena.csproj.AssemblyReference.cache
+D:\PROGRAMIRANJE\FormaOcena\FormaOcena\FormaOcena\obj\Debug\FormaOcena.csproj.SuggestedBindingRedirects.cache
+D:\PROGRAMIRANJE\FormaOcena\FormaOcena\FormaOcena\obj\Debug\FormaOcena.Form1.resources
+D:\PROGRAMIRANJE\FormaOcena\FormaOcena\FormaOcena\obj\Debug\FormaOcena.Properties.Resources.resources
+D:\PROGRAMIRANJE\FormaOcena\FormaOcena\FormaOcena\obj\Debug\FormaOcena.csproj.GenerateResource.cache
+D:\PROGRAMIRANJE\FormaOcena\FormaOcena\FormaOcena\obj\Debug\FormaOcena.csproj.CoreCompileInputs.cache
+D:\PROGRAMIRANJE\FormaOcena\FormaOcena\FormaOcena\obj\Debug\FormaOcena.exe
+D:\PROGRAMIRANJE\FormaOcena\FormaOcena\FormaOcena\obj\Debug\FormaOcena.pdb
