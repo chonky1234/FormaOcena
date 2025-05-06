@@ -114,7 +114,7 @@ namespace FormaOcena
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(445, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 17);
+            this.label1.Size = new System.Drawing.Size(20, 16);
             this.label1.TabIndex = 8;
             this.label1.Text = "ID";
             // 
@@ -123,7 +123,7 @@ namespace FormaOcena
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(445, 141);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 17);
+            this.label2.Size = new System.Drawing.Size(29, 16);
             this.label2.TabIndex = 9;
             this.label2.Text = "Ime";
             // 
@@ -132,7 +132,7 @@ namespace FormaOcena
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(445, 185);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 17);
+            this.label3.Size = new System.Drawing.Size(56, 16);
             this.label3.TabIndex = 10;
             this.label3.Text = "Prezime";
             // 
@@ -141,7 +141,7 @@ namespace FormaOcena
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(445, 242);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 17);
+            this.label4.Size = new System.Drawing.Size(51, 16);
             this.label4.TabIndex = 11;
             this.label4.Text = "Adresa";
             // 
@@ -150,7 +150,7 @@ namespace FormaOcena
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(445, 284);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 17);
+            this.label5.Size = new System.Drawing.Size(44, 16);
             this.label5.TabIndex = 12;
             this.label5.Text = "JMBG";
             // 
@@ -159,7 +159,7 @@ namespace FormaOcena
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(445, 326);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 17);
+            this.label6.Size = new System.Drawing.Size(45, 16);
             this.label6.TabIndex = 13;
             this.label6.Text = "E-mail";
             // 
@@ -168,7 +168,7 @@ namespace FormaOcena
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(445, 365);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 17);
+            this.label7.Size = new System.Drawing.Size(44, 16);
             this.label7.TabIndex = 14;
             this.label7.Text = "Uloga";
             // 
