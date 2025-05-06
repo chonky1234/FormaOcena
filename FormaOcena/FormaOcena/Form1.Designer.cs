@@ -51,12 +51,15 @@ namespace FormaOcena
             this.btnIzmeni = new System.Windows.Forms.Button();
             this.btnBrisi = new System.Windows.Forms.Button();
             this.btnDesno = new System.Windows.Forms.Button();
-            this.btnSkrorzDesno = new System.Windows.Forms.Button();
+            this.btnSkrozDesno = new System.Windows.Forms.Button();
+            this.lblLozinka = new System.Windows.Forms.Label();
+            this.txtLozinka = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(640, 88);
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(299, 23);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(100, 22);
             this.txtID.TabIndex = 0;
@@ -69,42 +72,42 @@ namespace FormaOcena
             // 
             // txtIme
             // 
-            this.txtIme.Location = new System.Drawing.Point(640, 136);
+            this.txtIme.Location = new System.Drawing.Point(299, 71);
             this.txtIme.Name = "txtIme";
             this.txtIme.Size = new System.Drawing.Size(100, 22);
             this.txtIme.TabIndex = 2;
             // 
             // txtPrezime
             // 
-            this.txtPrezime.Location = new System.Drawing.Point(640, 185);
+            this.txtPrezime.Location = new System.Drawing.Point(299, 120);
             this.txtPrezime.Name = "txtPrezime";
             this.txtPrezime.Size = new System.Drawing.Size(100, 22);
             this.txtPrezime.TabIndex = 3;
             // 
             // txtAdresa
             // 
-            this.txtAdresa.Location = new System.Drawing.Point(640, 237);
+            this.txtAdresa.Location = new System.Drawing.Point(299, 172);
             this.txtAdresa.Name = "txtAdresa";
             this.txtAdresa.Size = new System.Drawing.Size(100, 22);
             this.txtAdresa.TabIndex = 4;
             // 
             // txtJMBG
             // 
-            this.txtJMBG.Location = new System.Drawing.Point(640, 281);
+            this.txtJMBG.Location = new System.Drawing.Point(299, 216);
             this.txtJMBG.Name = "txtJMBG";
             this.txtJMBG.Size = new System.Drawing.Size(100, 22);
             this.txtJMBG.TabIndex = 5;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(640, 326);
+            this.txtEmail.Location = new System.Drawing.Point(299, 282);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(100, 22);
             this.txtEmail.TabIndex = 6;
             // 
             // txtUloga
             // 
-            this.txtUloga.Location = new System.Drawing.Point(640, 365);
+            this.txtUloga.Location = new System.Drawing.Point(299, 321);
             this.txtUloga.Name = "txtUloga";
             this.txtUloga.Size = new System.Drawing.Size(100, 22);
             this.txtUloga.TabIndex = 7;
@@ -112,7 +115,7 @@ namespace FormaOcena
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(445, 88);
+            this.label1.Location = new System.Drawing.Point(104, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(20, 16);
             this.label1.TabIndex = 8;
@@ -121,7 +124,7 @@ namespace FormaOcena
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(445, 141);
+            this.label2.Location = new System.Drawing.Point(104, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 16);
             this.label2.TabIndex = 9;
@@ -130,7 +133,7 @@ namespace FormaOcena
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(445, 185);
+            this.label3.Location = new System.Drawing.Point(104, 120);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 16);
             this.label3.TabIndex = 10;
@@ -139,7 +142,7 @@ namespace FormaOcena
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(445, 242);
+            this.label4.Location = new System.Drawing.Point(104, 177);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 16);
             this.label4.TabIndex = 11;
@@ -148,7 +151,7 @@ namespace FormaOcena
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(445, 284);
+            this.label5.Location = new System.Drawing.Point(104, 219);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 16);
             this.label5.TabIndex = 12;
@@ -157,7 +160,7 @@ namespace FormaOcena
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(445, 326);
+            this.label6.Location = new System.Drawing.Point(104, 282);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 16);
             this.label6.TabIndex = 13;
@@ -166,7 +169,7 @@ namespace FormaOcena
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(445, 365);
+            this.label7.Location = new System.Drawing.Point(104, 321);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(44, 16);
             this.label7.TabIndex = 14;
@@ -174,73 +177,95 @@ namespace FormaOcena
             // 
             // btnSkrozLevo
             // 
-            this.btnSkrozLevo.Location = new System.Drawing.Point(157, 508);
+            this.btnSkrozLevo.Location = new System.Drawing.Point(29, 386);
             this.btnSkrozLevo.Name = "btnSkrozLevo";
-            this.btnSkrozLevo.Size = new System.Drawing.Size(75, 23);
+            this.btnSkrozLevo.Size = new System.Drawing.Size(95, 23);
             this.btnSkrozLevo.TabIndex = 15;
             this.btnSkrozLevo.Text = "<<";
             this.btnSkrozLevo.UseVisualStyleBackColor = true;
+            this.btnSkrozLevo.Click += new System.EventHandler(this.btnSkrozLevo_Click);
             // 
             // btnLevo
             // 
-            this.btnLevo.Location = new System.Drawing.Point(285, 508);
+            this.btnLevo.Location = new System.Drawing.Point(157, 386);
             this.btnLevo.Name = "btnLevo";
-            this.btnLevo.Size = new System.Drawing.Size(75, 23);
+            this.btnLevo.Size = new System.Drawing.Size(95, 23);
             this.btnLevo.TabIndex = 16;
             this.btnLevo.Text = "<";
             this.btnLevo.UseVisualStyleBackColor = true;
+            this.btnLevo.Click += new System.EventHandler(this.btnLevo_Click);
             // 
             // btnDodaj
             // 
-            this.btnDodaj.Location = new System.Drawing.Point(511, 508);
+            this.btnDodaj.Location = new System.Drawing.Point(313, 386);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(75, 23);
+            this.btnDodaj.Size = new System.Drawing.Size(95, 23);
             this.btnDodaj.TabIndex = 17;
             this.btnDodaj.Text = "Dodaj";
             this.btnDodaj.UseVisualStyleBackColor = true;
             // 
             // btnIzmeni
             // 
-            this.btnIzmeni.Location = new System.Drawing.Point(665, 508);
+            this.btnIzmeni.Location = new System.Drawing.Point(467, 386);
             this.btnIzmeni.Name = "btnIzmeni";
-            this.btnIzmeni.Size = new System.Drawing.Size(75, 23);
+            this.btnIzmeni.Size = new System.Drawing.Size(95, 23);
             this.btnIzmeni.TabIndex = 18;
             this.btnIzmeni.Text = "Izmeni";
             this.btnIzmeni.UseVisualStyleBackColor = true;
             // 
             // btnBrisi
             // 
-            this.btnBrisi.Location = new System.Drawing.Point(842, 508);
+            this.btnBrisi.Location = new System.Drawing.Point(597, 386);
             this.btnBrisi.Name = "btnBrisi";
-            this.btnBrisi.Size = new System.Drawing.Size(75, 23);
+            this.btnBrisi.Size = new System.Drawing.Size(95, 23);
             this.btnBrisi.TabIndex = 19;
             this.btnBrisi.Text = "Brisi";
             this.btnBrisi.UseVisualStyleBackColor = true;
             // 
             // btnDesno
             // 
-            this.btnDesno.Location = new System.Drawing.Point(967, 508);
+            this.btnDesno.Location = new System.Drawing.Point(722, 386);
             this.btnDesno.Name = "btnDesno";
-            this.btnDesno.Size = new System.Drawing.Size(75, 23);
+            this.btnDesno.Size = new System.Drawing.Size(95, 23);
             this.btnDesno.TabIndex = 20;
             this.btnDesno.Text = ">";
             this.btnDesno.UseVisualStyleBackColor = true;
+            this.btnDesno.Click += new System.EventHandler(this.btnDesno_Click);
             // 
-            // btnSkrorzDesno
+            // btnSkrozDesno
             // 
-            this.btnSkrorzDesno.Location = new System.Drawing.Point(1102, 508);
-            this.btnSkrorzDesno.Name = "btnSkrorzDesno";
-            this.btnSkrorzDesno.Size = new System.Drawing.Size(75, 23);
-            this.btnSkrorzDesno.TabIndex = 21;
-            this.btnSkrorzDesno.Text = ">>";
-            this.btnSkrorzDesno.UseVisualStyleBackColor = true;
+            this.btnSkrozDesno.Location = new System.Drawing.Point(857, 386);
+            this.btnSkrozDesno.Name = "btnSkrozDesno";
+            this.btnSkrozDesno.Size = new System.Drawing.Size(95, 23);
+            this.btnSkrozDesno.TabIndex = 21;
+            this.btnSkrozDesno.Text = ">>";
+            this.btnSkrozDesno.UseVisualStyleBackColor = true;
+            this.btnSkrozDesno.Click += new System.EventHandler(this.btnSkrozDesno_Click);
+            // 
+            // lblLozinka
+            // 
+            this.lblLozinka.AutoSize = true;
+            this.lblLozinka.Location = new System.Drawing.Point(103, 254);
+            this.lblLozinka.Name = "lblLozinka";
+            this.lblLozinka.Size = new System.Drawing.Size(53, 16);
+            this.lblLozinka.TabIndex = 22;
+            this.lblLozinka.Text = "Lozinka";
+            // 
+            // txtLozinka
+            // 
+            this.txtLozinka.Location = new System.Drawing.Point(299, 251);
+            this.txtLozinka.Name = "txtLozinka";
+            this.txtLozinka.Size = new System.Drawing.Size(100, 22);
+            this.txtLozinka.TabIndex = 23;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1267, 679);
-            this.Controls.Add(this.btnSkrorzDesno);
+            this.ClientSize = new System.Drawing.Size(979, 437);
+            this.Controls.Add(this.txtLozinka);
+            this.Controls.Add(this.lblLozinka);
+            this.Controls.Add(this.btnSkrozDesno);
             this.Controls.Add(this.btnDesno);
             this.Controls.Add(this.btnBrisi);
             this.Controls.Add(this.btnIzmeni);
@@ -262,7 +287,6 @@ namespace FormaOcena
             this.Controls.Add(this.txtIme);
             this.Controls.Add(this.txtID);
             this.Name = "Form1";
-            this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -290,8 +314,10 @@ namespace FormaOcena
         private System.Windows.Forms.Button btnIzmeni;
         private System.Windows.Forms.Button btnBrisi;
         private System.Windows.Forms.Button btnDesno;
-        private System.Windows.Forms.Button btnSkrorzDesno;
+        private System.Windows.Forms.Button btnSkrozDesno;
         private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Label lblLozinka;
+        private System.Windows.Forms.TextBox txtLozinka;
     }
 }
 
