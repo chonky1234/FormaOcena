@@ -59,9 +59,9 @@ namespace FormaOcena
             // txtID
             // 
             this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(299, 23);
+            this.txtID.Location = new System.Drawing.Point(440, 24);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(100, 22);
+            this.txtID.Size = new System.Drawing.Size(213, 22);
             this.txtID.TabIndex = 0;
             // 
             // contextMenuStrip1
@@ -72,50 +72,50 @@ namespace FormaOcena
             // 
             // txtIme
             // 
-            this.txtIme.Location = new System.Drawing.Point(299, 71);
+            this.txtIme.Location = new System.Drawing.Point(440, 71);
             this.txtIme.Name = "txtIme";
-            this.txtIme.Size = new System.Drawing.Size(100, 22);
+            this.txtIme.Size = new System.Drawing.Size(213, 22);
             this.txtIme.TabIndex = 2;
             // 
             // txtPrezime
             // 
-            this.txtPrezime.Location = new System.Drawing.Point(299, 120);
+            this.txtPrezime.Location = new System.Drawing.Point(440, 115);
             this.txtPrezime.Name = "txtPrezime";
-            this.txtPrezime.Size = new System.Drawing.Size(100, 22);
+            this.txtPrezime.Size = new System.Drawing.Size(213, 22);
             this.txtPrezime.TabIndex = 3;
             // 
             // txtAdresa
             // 
-            this.txtAdresa.Location = new System.Drawing.Point(299, 172);
+            this.txtAdresa.Location = new System.Drawing.Point(440, 159);
             this.txtAdresa.Name = "txtAdresa";
-            this.txtAdresa.Size = new System.Drawing.Size(100, 22);
+            this.txtAdresa.Size = new System.Drawing.Size(213, 22);
             this.txtAdresa.TabIndex = 4;
             // 
             // txtJMBG
             // 
-            this.txtJMBG.Location = new System.Drawing.Point(299, 216);
+            this.txtJMBG.Location = new System.Drawing.Point(440, 202);
             this.txtJMBG.Name = "txtJMBG";
-            this.txtJMBG.Size = new System.Drawing.Size(100, 22);
+            this.txtJMBG.Size = new System.Drawing.Size(213, 22);
             this.txtJMBG.TabIndex = 5;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(299, 282);
+            this.txtEmail.Location = new System.Drawing.Point(440, 277);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(100, 22);
+            this.txtEmail.Size = new System.Drawing.Size(213, 22);
             this.txtEmail.TabIndex = 6;
             // 
             // txtUloga
             // 
-            this.txtUloga.Location = new System.Drawing.Point(299, 321);
+            this.txtUloga.Location = new System.Drawing.Point(440, 316);
             this.txtUloga.Name = "txtUloga";
-            this.txtUloga.Size = new System.Drawing.Size(100, 22);
+            this.txtUloga.Size = new System.Drawing.Size(213, 22);
             this.txtUloga.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(104, 23);
+            this.label1.Location = new System.Drawing.Point(340, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(20, 16);
             this.label1.TabIndex = 8;
@@ -124,7 +124,7 @@ namespace FormaOcena
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(104, 76);
+            this.label2.Location = new System.Drawing.Point(340, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 16);
             this.label2.TabIndex = 9;
@@ -133,7 +133,7 @@ namespace FormaOcena
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(104, 120);
+            this.label3.Location = new System.Drawing.Point(340, 118);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 16);
             this.label3.TabIndex = 10;
@@ -142,7 +142,7 @@ namespace FormaOcena
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(104, 177);
+            this.label4.Location = new System.Drawing.Point(340, 162);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 16);
             this.label4.TabIndex = 11;
@@ -151,7 +151,7 @@ namespace FormaOcena
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(104, 219);
+            this.label5.Location = new System.Drawing.Point(340, 205);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 16);
             this.label5.TabIndex = 12;
@@ -160,7 +160,7 @@ namespace FormaOcena
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(104, 282);
+            this.label6.Location = new System.Drawing.Point(340, 280);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 16);
             this.label6.TabIndex = 13;
@@ -169,7 +169,7 @@ namespace FormaOcena
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(104, 321);
+            this.label7.Location = new System.Drawing.Point(340, 319);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(44, 16);
             this.label7.TabIndex = 14;
@@ -177,7 +177,7 @@ namespace FormaOcena
             // 
             // btnSkrozLevo
             // 
-            this.btnSkrozLevo.Location = new System.Drawing.Point(29, 386);
+            this.btnSkrozLevo.Location = new System.Drawing.Point(116, 386);
             this.btnSkrozLevo.Name = "btnSkrozLevo";
             this.btnSkrozLevo.Size = new System.Drawing.Size(95, 23);
             this.btnSkrozLevo.TabIndex = 15;
@@ -187,7 +187,7 @@ namespace FormaOcena
             // 
             // btnLevo
             // 
-            this.btnLevo.Location = new System.Drawing.Point(157, 386);
+            this.btnLevo.Location = new System.Drawing.Point(226, 386);
             this.btnLevo.Name = "btnLevo";
             this.btnLevo.Size = new System.Drawing.Size(95, 23);
             this.btnLevo.TabIndex = 16;
@@ -197,7 +197,7 @@ namespace FormaOcena
             // 
             // btnDodaj
             // 
-            this.btnDodaj.Location = new System.Drawing.Point(313, 386);
+            this.btnDodaj.Location = new System.Drawing.Point(366, 386);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(95, 23);
             this.btnDodaj.TabIndex = 17;
@@ -215,7 +215,7 @@ namespace FormaOcena
             // 
             // btnBrisi
             // 
-            this.btnBrisi.Location = new System.Drawing.Point(597, 386);
+            this.btnBrisi.Location = new System.Drawing.Point(568, 386);
             this.btnBrisi.Name = "btnBrisi";
             this.btnBrisi.Size = new System.Drawing.Size(95, 23);
             this.btnBrisi.TabIndex = 19;
@@ -224,7 +224,7 @@ namespace FormaOcena
             // 
             // btnDesno
             // 
-            this.btnDesno.Location = new System.Drawing.Point(722, 386);
+            this.btnDesno.Location = new System.Drawing.Point(687, 386);
             this.btnDesno.Name = "btnDesno";
             this.btnDesno.Size = new System.Drawing.Size(95, 23);
             this.btnDesno.TabIndex = 20;
@@ -234,7 +234,7 @@ namespace FormaOcena
             // 
             // btnSkrozDesno
             // 
-            this.btnSkrozDesno.Location = new System.Drawing.Point(857, 386);
+            this.btnSkrozDesno.Location = new System.Drawing.Point(799, 386);
             this.btnSkrozDesno.Name = "btnSkrozDesno";
             this.btnSkrozDesno.Size = new System.Drawing.Size(95, 23);
             this.btnSkrozDesno.TabIndex = 21;
@@ -245,7 +245,7 @@ namespace FormaOcena
             // lblLozinka
             // 
             this.lblLozinka.AutoSize = true;
-            this.lblLozinka.Location = new System.Drawing.Point(103, 254);
+            this.lblLozinka.Location = new System.Drawing.Point(340, 243);
             this.lblLozinka.Name = "lblLozinka";
             this.lblLozinka.Size = new System.Drawing.Size(53, 16);
             this.lblLozinka.TabIndex = 22;
@@ -253,9 +253,9 @@ namespace FormaOcena
             // 
             // txtLozinka
             // 
-            this.txtLozinka.Location = new System.Drawing.Point(299, 251);
+            this.txtLozinka.Location = new System.Drawing.Point(440, 240);
             this.txtLozinka.Name = "txtLozinka";
-            this.txtLozinka.Size = new System.Drawing.Size(100, 22);
+            this.txtLozinka.Size = new System.Drawing.Size(213, 22);
             this.txtLozinka.TabIndex = 23;
             // 
             // Form1
