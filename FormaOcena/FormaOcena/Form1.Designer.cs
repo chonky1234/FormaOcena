@@ -203,6 +203,7 @@ namespace FormaOcena
             this.btnDodaj.TabIndex = 17;
             this.btnDodaj.Text = "Dodaj";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // btnIzmeni
             // 
@@ -212,6 +213,7 @@ namespace FormaOcena
             this.btnIzmeni.TabIndex = 18;
             this.btnIzmeni.Text = "Izmeni";
             this.btnIzmeni.UseVisualStyleBackColor = true;
+            this.btnIzmeni.Click += new System.EventHandler(this.btnIzmeni_Click);
             // 
             // btnBrisi
             // 
@@ -221,6 +223,7 @@ namespace FormaOcena
             this.btnBrisi.TabIndex = 19;
             this.btnBrisi.Text = "Brisi";
             this.btnBrisi.UseVisualStyleBackColor = true;
+            this.btnBrisi.Click += new System.EventHandler(this.btnBrisi_Click);
             // 
             // btnDesno
             // 

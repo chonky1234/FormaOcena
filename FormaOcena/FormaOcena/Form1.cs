@@ -34,7 +34,7 @@ namespace FormaOcena
 
         void txt_Load()
         {
-            if (tabela.Rows.Count == -1)
+            if (tabela.Rows.Count == 0)
             {
                 txtID.Text = "";
                 txtIme.Text = "";
@@ -44,6 +44,7 @@ namespace FormaOcena
                 txtEmail.Text = "";
                 txtLozinka.Text = "";
                 txtUloga.Text = "";
+                btnBrisi.Enabled = false;
             }
             else
             {
@@ -55,6 +56,7 @@ namespace FormaOcena
                 txtEmail.Text = tabela.Rows[broj_sloga]["email"].ToString();
                 txtLozinka.Text = tabela.Rows[broj_sloga]["pass"].ToString();
                 txtUloga.Text = tabela.Rows[broj_sloga]["uloga"].ToString();
+                btnBrisi.Enabled = true;
             }
 
             if (broj_sloga == 0)
@@ -111,6 +113,96 @@ namespace FormaOcena
         {
             broj_sloga = tabela.Rows.Count - 1;
             txt_Load();
+        }
+
+        private void btnDodaj_Click(object sender, EventArgs e)
+        {
+            StringBuilder naredba = new StringBuilder("Insert into Osoba" +
+                "(ime, prezime, adresa, jmbg,email, pass, uloga) " +
+                "values (");
+
+            naredba.Append( "'" + txtIme.Text + "',");
+            naredba.Append("'" + txtPrezime.Text + "',");
+            naredba.Append("'" + txtAdresa.Text + "',");
+            naredba.Append("'" + txtJMBG.Text + "',");
+            naredba.Append("'" + txtEmail.Text + "',");
+            naredba.Append("'" + txtLozinka.Text + "',");
+            naredba.Append("'" + txtUloga.Text + "')");
+            SqlConnection veza = Konekcija.Connect();
+            SqlCommand komanda = new SqlCommand(naredba.ToString(), veza);
+            try
+            {
+                veza.Open();
+                komanda.ExecuteNonQuery();
+                veza.Close();
+            }
+            catch
+            {
+                MessageBox.Show("greska");
+            }
+
+            Load_Data();
+            broj_sloga = tabela.Rows.Count - 1;
+            txt_Load();
+
+        }
+
+        private void btnIzmeni_Click(object sender, EventArgs e)
+        {
+            StringBuilder naredba = new StringBuilder("Update osoba set ");
+            naredba.Append("ime = '" + txtIme.Text + "', ");
+            naredba.Append("prezime = '" + txtPrezime.Text + "', ");
+            naredba.Append("adresa = '" + txtAdresa.Text + "', ");
+            naredba.Append("jmbg = '" + txtJMBG.Text + "', ");
+            naredba.Append("email = '" + txtEmail.Text + "', ");
+            naredba.Append("pass = '" + txtLozinka.Text + "', ");
+            naredba.Append("uloga = '" + txtUloga.Text + "'");
+            naredba.Append("where id = " + txtID.Text);
+
+            SqlConnection veza = Konekcija.Connect();
+            SqlCommand komanda = new SqlCommand(naredba.ToString(), veza);
+            try
+            {
+                veza.Open();
+                komanda.ExecuteNonQuery();
+                veza.Close();
+            }
+            catch
+            {
+                MessageBox.Show("greska");
+            }
+
+            Load_Data();
+            //broj_sloga = tabela.Rows.Count - 1;
+            txt_Load();
+
+        }
+
+        private void btnBrisi_Click(object sender, EventArgs e)
+        {
+            string naredba = "delete from osoba where id = " + txtID.Text;
+
+            SqlConnection veza = Konekcija.Connect();
+            SqlCommand komanda = new SqlCommand(naredba.ToString(), veza);
+            bool brisano = false;
+            try
+            {
+                veza.Open();
+                komanda.ExecuteNonQuery();
+                veza.Close();
+                brisano =  true;
+            }
+            catch
+            {
+                MessageBox.Show("greska");
+            }
+
+            if (brisano)
+            {
+                Load_Data();
+                if (broj_sloga > 0) broj_sloga--;
+                txt_Load();
+            }
         }
     }
 }
